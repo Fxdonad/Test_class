@@ -2,8 +2,13 @@ import axios from "axios";
 
 const API_BASE_URL = "http://localhost:8081/api/products";
 
-export const getProducts = () => {
-  return axios.get(API_BASE_URL);
+export const getProducts = (page = 0, size = 10) => {
+  return axios.get(API_BASE_URL, {
+    params: {
+      page: page,
+      size: size,
+    },
+  });
 };
 
 export const getProductById = (id) => {
