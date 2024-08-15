@@ -89,8 +89,8 @@ const ProductList = () => {
     <>
       <Header />
       <div className="flex">
-        <SideBar />
-        <div className="flex-1 p-6">
+        <SideBar/>
+        <div className="flex-1 m-6">
           <h1 className="mt-8 mb-10 text-5xl font-extrabold text-center text-gray-800">
             Product Management
           </h1>
@@ -226,7 +226,7 @@ const ProductList = () => {
                     ))
                   ) : (
                     <tr>
-                      <td colSpan="5" className="py-4 text-center h-12">
+                      <td colSpan="5" className="h-12 py-4 text-center">
                         No products found
                       </td>
                     </tr>

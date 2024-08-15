@@ -22,7 +22,7 @@ const SideBar = () => {
   };
 
   return (
-    <aside className="bg-gray-800 text-white p-4 opacity-90 h-full">
+    <aside className="h-auto p-4 text-white bg-gray-800 opacity-90">
       <nav className="space-y-2">
         <Link to="/" className={`block px-4 py-2 rounded ${getLinkClass("/")}`}>
           Home
