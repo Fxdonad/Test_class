@@ -1,0 +1,16 @@
+Tên database: Test_class
+
+-- Tạo bảng Category
+CREATE TABLE Category (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(255) NOT NULL
+);
+
+-- Tạo bảng Product
+CREATE TABLE Product (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    IdCategory INT,
+    Name VARCHAR(255) NOT NULL,
+    Description TEXT,
+    FOREIGN KEY (IdCategory) REFERENCES Category(ID)
+);
