@@ -10,9 +10,9 @@ const SideBar = () => {
       (location.pathname.startsWith("/edit-product") && path === "/products")
     ) {
       if (path === "/products") {
-        return "bg-blue-300 text-white";
+        return "bg-blue-300 text-black";
       } else if (path === "/new-product") {
-        return "bg-green-300 text-white";
+        return "bg-green-300 text-black";
       } else {
         return "bg-gray-700 text-white";
       }
